@@ -71,7 +71,7 @@ print(tokenizer.decode(out[0], skip_special_tokens=True))
 ```
 
 ## Evaluation
-- See `test_results.json` for the held-out validation metrics produced after training. (No public benchmark beyond the split provided in Finance-Instruct-500k.)
+- See `eval_50_gpt_judged_raw.jsonl` for the held-out validation metrics produced after training. (No public benchmark beyond the split provided in Finance-Instruct-500k.)
 
 ## Limitations & Risks
 - Domain-focused on finance/economics; may underperform on general tasks.
