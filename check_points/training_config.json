@@ -1,0 +1,58 @@
+{
+  "base_model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+  "dataset": "Josephgflowers/Finance-Instruct-500k",
+  "training_config": {
+    "model_name": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "dataset_name": "Josephgflowers/Finance-Instruct-500k",
+    "dataset_config": "default",
+    "max_length": 2048,
+    "train_batch_size": 16,
+    "eval_batch_size": 8,
+    "gradient_accumulation_steps": 4,
+    "learning_rate": 0.0001,
+    "num_epochs": 2,
+    "lora_r": 64,
+    "lora_alpha": 128,
+    "lora_dropout": 0.1,
+    "warmup_ratio": 0.05,
+    "weight_decay": 0.01,
+    "max_grad_norm": 1.0,
+    "save_steps": 100,
+    "eval_steps": 50,
+    "logging_steps": 25,
+    "output_dir": "/content/drive/MyDrive/financial_llama_models/checkpoints",
+    "save_dir": "/content/drive/MyDrive/financial_llama_models/final_model",
+    "fp16": true,
+    "gradient_checkpointing": true,
+    "dataloader_num_workers": 4,
+    "quantization": null,
+    "precision": "fp16",
+    "length_bucket_boundaries": [
+      512,
+      1024,
+      1536,
+      2048
+    ],
+    "length_stats_sample_size": 4000,
+    "length_stats_percentile": 0.98,
+    "align_save_with_eval": true,
+    "optim": "paged_adamw_8bit",
+    "max_train_samples": 25000,
+    "max_val_samples": 2500,
+    "length_stats": {
+      "p50": 168,
+      "p75": 289,
+      "p90": 552,
+      "p95": 814,
+      "p98": 1131,
+      "p99": 1535,
+      "p100": 1537
+    }
+  },
+  "lora_config": {
+    "r": 64,
+    "alpha": 128,
+    "dropout": 0.1
+  },
+  "training_date": "2025-11-15T04:03:37.180688"
+}
