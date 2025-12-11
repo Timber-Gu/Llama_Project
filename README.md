@@ -15,6 +15,7 @@ tags:
 # Llama for Finance (LoRA)
 
 A financial-domain instruction-tuned LoRA adapter for `meta-llama/Meta-Llama-3.1-8B-Instruct`. Trained on a filtered subset of Finance-Instruct-500k with English-only enforcement and length-aware batching to reduce padding waste.
+# Hugging Face link: https://huggingface.co/TimberGu/Llama_for_Finance
 
 ## Model Details
 - **Base model:** meta-llama/Meta-Llama-3.1-8B-Instruct  
